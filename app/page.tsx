@@ -17,6 +17,7 @@ import coumbacom from "@/public/media/coumbacom.png";
 import ecommerce from "@/public/media/ecommerce.png";
 import confluence from "@/public/media/confluence.png";
 import visible from "@/public/media/visible.png";
+import profil from "@/public/media/profil.png";
 
 const skills = [
   "JavaScript",
@@ -245,7 +246,7 @@ const projets = [
     website: "https://confluence-conseils.com/",
     sourceCode: "https://confluence-conseils.com/",
   },
-    {
+  {
     Ctitle: "Visible",
     description: `
     C'est une agence complète qui propose des services de publicité visuelle (impression, signalétique, habillage, goodies) au Sénégal et dans plusieurs pays d’Afrique`,
@@ -278,8 +279,8 @@ export default function HomePage() {
     <main className="container mx-auto py-8 relative">
       <div className="fixed w-[250px] h-[250px] blur-3xl rounded-full bg-indigo-600 opacity-20"></div>
       <div className="fixed w-[350px] bottom-10 right-0 h-[350px] blur-3xl rounded-full bg-amber-600 opacity-20 z-0"></div>
-      <section className="mt-12 max-w-3xl mx-auto space-y-7 z-10 relative">
-        <div className="flex items-start justify-between">
+      <section className="my-10 max-w-3xl mx-auto space-y-7 z-10 relative p-4">
+        <div className="flex items-start justify-between flex-col sm:flex-row gap-4 mb-8">
           <div className="flex flex-col gap-4 w-3/4">
             <h1 className="text-3xl font-semibold">
               Salut, Je suis{" "}
@@ -293,7 +294,13 @@ export default function HomePage() {
               création d’expériences numériques modernes et performantes.
             </p>
           </div>
-          <div className="bg-indigo-600 h-32 w-32 rounded-full"></div>
+          <div className=" h-48 w-48 rounded-full">
+            <img
+              src={profil.src}
+              alt="Abdoulaye Latyr SENE"
+              className="object-cover w-full h-full rounded-full"
+            />
+          </div>
         </div>
         <div>
           <h2 className="text-3xl font-semibold">À propos de moi</h2>
